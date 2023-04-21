@@ -1,0 +1,796 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CustomerScheduleAppointmentComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-customer-schedule-appointment</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./customer-schedule-appointment.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./customer-schedule-appointment.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appointmentForm" >appointmentForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogRef" >dialogRef</a>
+                            </li>
+                            <li>
+                                <a href="#serviceTypeList" >serviceTypeList</a>
+                            </li>
+                            <li>
+                                <a href="#vehicleList" >vehicleList</a>
+                            </li>
+                            <li>
+                                <a href="#vehicleTypeList" >vehicleTypeList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onCancel" >onCancel</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit" >onSubmit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, dialogRef: <a href="../components/CustomerScheduleAppointmentComponent.html" target="_self">MatDialogRef&lt;CustomerScheduleAppointmentComponent&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/CustomerScheduleAppointmentComponent.html" target="_self" >MatDialogRef&lt;CustomerScheduleAppointmentComponent&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCancel"></a>
+                    <span class="name">
+                        <span ><b>onCancel</b></span>
+                        <a href="#onCancel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCancel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <span ><b>onSubmit</b></span>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appointmentForm"></a>
+                    <span class="name">
+                        <span ><b>appointmentForm</b></span>
+                        <a href="#appointmentForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialogRef"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialogRef</b></span>
+                        <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../components/CustomerScheduleAppointmentComponent.html" target="_self" >MatDialogRef&lt;CustomerScheduleAppointmentComponent&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="serviceTypeList"></a>
+                    <span class="name">
+                        <span ><b>serviceTypeList</b></span>
+                        <a href="#serviceTypeList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;Oil Change&#x27;, &#x27;Tire Rotation&#x27;, &#x27;Brake Inspection&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="vehicleList"></a>
+                    <span class="name">
+                        <span ><b>vehicleList</b></span>
+                        <a href="#vehicleList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;Car A&#x27;, &#x27;Car B&#x27;, &#x27;Car C&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="vehicleTypeList"></a>
+                    <span class="name">
+                        <span ><b>vehicleTypeList</b></span>
+                        <a href="#vehicleTypeList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;Sedan&#x27;, &#x27;SUV&#x27;, &#x27;Truck&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/customer-schedule-appointment/customer-schedule-appointment.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { MatDialogRef } from &#x27;@angular/material/dialog&#x27;;
+
+@Component({
+  selector: &#x27;app-customer-schedule-appointment&#x27;,
+  templateUrl: &#x27;./customer-schedule-appointment.component.html&#x27;,
+  styleUrls: [&#x27;./customer-schedule-appointment.component.css&#x27;]
+})
+export class CustomerScheduleAppointmentComponent implements OnInit{
+  appointmentForm: FormGroup;
+
+  vehicleList &#x3D; [&#x27;Car A&#x27;, &#x27;Car B&#x27;, &#x27;Car C&#x27;];
+  vehicleTypeList &#x3D; [&#x27;Sedan&#x27;, &#x27;SUV&#x27;, &#x27;Truck&#x27;];
+  serviceTypeList &#x3D; [&#x27;Oil Change&#x27;, &#x27;Tire Rotation&#x27;, &#x27;Brake Inspection&#x27;];
+
+  constructor(
+    private fb: FormBuilder, public dialogRef: MatDialogRef&lt;CustomerScheduleAppointmentComponent&gt;
+  ){
+    this.appointmentForm &#x3D; this.fb.group({
+      vehicle: [&#x27;&#x27;, Validators.required],
+      vehicleType: [&#x27;&#x27;, Validators.required],
+      serviceType: [&#x27;&#x27;, Validators.required],
+      date: [&#x27;&#x27;, Validators.required]
+    });
+  }
+
+  // Schedule appointment on click of submit
+  onSubmit(): void {
+    if (this.appointmentForm.valid) {
+      this.dialogRef.close(this.appointmentForm.value);
+    }
+  }
+
+  // Cancel the operation
+  onCancel(): void {
+    this.dialogRef.close();
+  }
+
+  ngOnInit(): void {
+
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Schedule an appointement by customer dialog box --&gt;
+&lt;h2 mat-dialog-title class&#x3D;&quot;m-2&quot;&gt;Schedule Appointment&lt;/h2&gt;
+&lt;div mat-dialog-content&gt;
+  &lt;form [formGroup]&#x3D;&quot;appointmentForm&quot;&gt;
+    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+      &lt;mat-label&gt;Vehicle&lt;/mat-label&gt;
+      &lt;mat-select formControlName&#x3D;&quot;vehicle&quot;&gt;
+        &lt;mat-option value&#x3D;&quot;vehicle1&quot;&gt;Vehicle 1&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;vehicle2&quot;&gt;Vehicle 2&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;vehicle3&quot;&gt;Vehicle 3&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+
+    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+      &lt;mat-label&gt;Vehicle Type&lt;/mat-label&gt;
+      &lt;mat-select formControlName&#x3D;&quot;vehicleType&quot;&gt;
+        &lt;mat-option value&#x3D;&quot;sedan&quot;&gt;Sedan&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;suv&quot;&gt;SUV&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;truck&quot;&gt;Truck&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;van&quot;&gt;Van&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+
+    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+      &lt;mat-label&gt;Service Type&lt;/mat-label&gt;
+      &lt;mat-select formControlName&#x3D;&quot;serviceType&quot;&gt;
+        &lt;mat-option value&#x3D;&quot;oilChange&quot;&gt;Oil Change&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;tireRotation&quot;&gt;Tire Rotation&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;brakeService&quot;&gt;Brake Service&lt;/mat-option&gt;
+        &lt;mat-option value&#x3D;&quot;other&quot;&gt;Other&lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+
+    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+      &lt;input matInput [matDatepicker]&#x3D;&quot;picker&quot; formControlName&#x3D;&quot;date&quot; placeholder&#x3D;&quot;Choose a date&quot;&gt;
+      &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+      &lt;mat-datepicker #picker&gt;&lt;/mat-datepicker&gt;
+    &lt;/mat-form-field&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+&lt;div mat-dialog-actions class&#x3D;&quot;m-3 dialog-buttons&quot;&gt;
+  &lt;button class&#x3D;&quot;btn btn-sm btn-danger m-2&quot;&gt;Cancel&lt;/button&gt;
+  &lt;button class&#x3D;&quot;btn btn-sm btn-primary m-2&quot;&gt;Schedule&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./customer-schedule-appointment.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.example-full-width {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 12px 0 !important;
+}
+
+.dialog-buttons {
+    justify-content: flex-end
+}
+
+/* Set the font size and color of the dialog title */
+.mat-dialog-title {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Set the font size and color of the form fields */
+.mat-form-field {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Set the background color of the dialog content */
+.mat-dialog-content {
+  background-color: #fff;
+}
+
+/* Set the padding of the dialog actions */
+.mat-dialog-actions {
+  padding: 10px;
+}
+
+/* Set the margin and font size of the dialog buttons */
+.dialog-buttons button {
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Set the color and background color of the cancel button */
+.dialog-buttons .btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Set the color and background color of the schedule button */
+.dialog-buttons .btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Schedule an appointement by customer dialog box --><h2 mat-dialog-title class="m-2">Schedule Appointment</h2><div mat-dialog-content>  <form [formGroup]="appointmentForm">    <mat-form-field class="example-full-width">      <mat-label>Vehicle</mat-label>      <mat-select formControlName="vehicle">        <mat-option value="vehicle1">Vehicle 1</mat-option>        <mat-option value="vehicle2">Vehicle 2</mat-option>        <mat-option value="vehicle3">Vehicle 3</mat-option>      </mat-select>    </mat-form-field>    <mat-form-field class="example-full-width">      <mat-label>Vehicle Type</mat-label>      <mat-select formControlName="vehicleType">        <mat-option value="sedan">Sedan</mat-option>        <mat-option value="suv">SUV</mat-option>        <mat-option value="truck">Truck</mat-option>        <mat-option value="van">Van</mat-option>      </mat-select>    </mat-form-field>    <mat-form-field class="example-full-width">      <mat-label>Service Type</mat-label>      <mat-select formControlName="serviceType">        <mat-option value="oilChange">Oil Change</mat-option>        <mat-option value="tireRotation">Tire Rotation</mat-option>        <mat-option value="brakeService">Brake Service</mat-option>        <mat-option value="other">Other</mat-option>      </mat-select>    </mat-form-field>    <mat-form-field class="example-full-width">      <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Choose a date">      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>      <mat-datepicker #picker></mat-datepicker>    </mat-form-field>  </form></div><div mat-dialog-actions class="m-3 dialog-buttons">  <button class="btn btn-sm btn-danger m-2">Cancel</button>  <button class="btn btn-sm btn-primary m-2">Schedule</button></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticateComponent', 'selector': 'app-authenticate'},{'name': 'CustomerAddVehicleComponent', 'selector': 'app-customer-add-vehicle'},{'name': 'CustomerComponent', 'selector': 'app-customer'},{'name': 'CustomerManageAppointmentsComponent', 'selector': 'app-customer-manage-appointments'},{'name': 'CustomerScheduleAppointmentComponent', 'selector': 'app-customer-schedule-appointment'},{'name': 'CustomerServicesComponent', 'selector': 'app-customer-services'},{'name': 'CustomerVehiclesComponent', 'selector': 'app-customer-vehicles'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'PasswordComponent', 'selector': 'app-password'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'ShopManageAppointmentsComponent', 'selector': 'app-shop-manage-appointments'},{'name': 'ShopManagePartsComponent', 'selector': 'app-shop-manage-parts'},{'name': 'ShopManageServicesComponent', 'selector': 'app-shop-manage-services'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CustomerScheduleAppointmentComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CustomerScheduleAppointmentComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
