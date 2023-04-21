@@ -1,0 +1,116 @@
+<div class="container">
+
+    <!-- Form to folter the records -->
+    <form [formGroup]="filterForm" (ngSubmit)="applyFilter()" class="my-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-3">
+                <label class="form-label">Date</label>
+                <div class="input-group">
+                    <input type="date" formControlName="date" class="form-control">
+                    <span class="input-group-text">
+                        <i class="bi bi-calendar"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-3">
+                <label class="form-label">Service Type</label>
+                <div class="input-group">
+                    <select formControlName="serviceType" class="form-select">
+                        <option value="">All</option>
+                        <option value="Oil Change">Oil Change</option>
+                        <option value="Tire Rotation">Tire Rotation</option>
+                        <option value="Brake Service">Brake Service</option>
+                        <option value="Battery Replacement">Battery Replacement</option>
+                    </select>
+                    <span class="input-group-text">
+                        <i class="bi bi-gear"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-3">
+                <label class="form-label">Status</label>
+                <div class="input-group">
+                    <select formControlName="status" class="form-select">
+                        <option value="">All</option>
+                        <option value="Scheduled">Scheduled</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                    <span class="input-group-text">
+                        <i class="bi bi-stopwatch"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-3">
+                <label class="form-label">Payment</label>
+                <div class="input-group">
+                    <select formControlName="payment" class="form-select">
+                        <option value="">All</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Paid">Paid</option>
+                    </select>
+                    <span class="input-group-text">
+                        <i class="bi bi-currency-dollar"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-3">
+                <label class="form-label">Vehicle</label>
+                <div class="input-group">
+                    <input type="text" formControlName="vehicle" class="form-control">
+                    <span class="input-group-text">
+                        <i class="bi bi-car"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">Apply Filter</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- List of appointements -->
+    <div class="row appointments-list">
+        <div class="col-md-12" *ngFor="let appointment of filteredAppointments">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <p class="card-text"><strong>Appointment Id:</strong> {{ appointment.id }}</p>
+                        </div>
+                        <div class="col">
+                            <p class="card-text"><strong>Date:</strong> {{ appointment.date | date }}</p>
+                        </div>
+                        <div class="col">
+                            <p class="card-text"><strong>Time:</strong> {{ appointment.time }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="card-text"><strong>Status:</strong> {{ appointment.status }}</p>
+                        </div>
+                        <div class="col">
+                            <p class="card-text"><strong>Vehicle:</strong> {{ appointment.vehicle }}</p>
+                        </div>
+                        <div class="col">
+                            <p class="card-text"><strong>Payment:</strong> {{ appointment.payment }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Action
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="actionDropdown">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,39 @@
+.vehicles-component .card {
+    background: linear-gradient(to bottom right, #4b6cb7, #000);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.vehicles-component .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.vehicles-component .card-body {
+    padding: 1.25rem;
+}
+
+.vehicles-component .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.vehicles-component .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.vehicles-component .card-footer {
+    background: linear-gradient(to bottom right, #4b6cb7, #000);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+}
+
+.vehicles-component .add-vehicle-button {
+    position: relative !important;
+    left: 80px !important;
+}

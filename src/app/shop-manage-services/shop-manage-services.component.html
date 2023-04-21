@@ -1,0 +1,32 @@
+<!-- Services offered list view  and update operations -->
+<div class="container shop-manage-services">
+    <div class="row">
+        <div class="col m-3">
+          <h3 class="text-primary">Services Offered at Woody's</h3>
+        </div>
+        <div class="col-2 my-3">
+          <button class="btn btn-primary float-right" (click)="addNewService()">Add New Service</button>
+        </div>
+      </div>
+    <div class="card-deck">
+      <div class="card m-3" *ngFor="let service of services">
+        <div class="card-header">{{ service.name }}</div>
+        <div class="card-body">
+          <p>Price: {{ service.price }}</p>
+          <p>Vehicle Type: {{ service.vehicleType }}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-end">
+          <div class="dropdown float-right">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actions
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" (click)="editService(service)">Edit</a>
+              <a class="dropdown-item" href="#" (click)="deleteService(service)">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

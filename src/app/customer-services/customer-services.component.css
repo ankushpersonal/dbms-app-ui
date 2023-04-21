@@ -1,0 +1,83 @@
+.services-component .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .services-component .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .services-component .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  
+  .services-component .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .services-component .card {
+    margin-bottom: 30px;
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-image: linear-gradient(160deg, #008aff 0%, #2a2d3e 100%);
+     */
+    background: linear-gradient(to bottom right, #4b6cb7, #000);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services-component .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-component .card-img-top {
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .services-component .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .services-component .card-text {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .services-component .text-primary {
+    color: #007bff !important;
+  }
+  
+  .services-component .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .services-component .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .services-component .float-right {
+    float: right;
+  }
+  
+  .services-component .font-weight-bold {
+    font-weight: bold;
+  }
+  
+  .services-component .text-success {
+    color: #28a745 !important;
+  }
+  

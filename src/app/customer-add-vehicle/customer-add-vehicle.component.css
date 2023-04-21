@@ -1,0 +1,52 @@
+.add-vehicle-component {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1rem;
+}
+
+.add-vehicle-component .example-full-width {
+width: 100%;
+}
+
+.add-vehicle-component .mat-form-field {
+margin-top: 1rem;
+}
+
+.dialog-buttons {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.dialog-buttons button {
+margin-left: 1rem;
+}
+
+.btn-primary {
+background-color: #007bff;
+border-color: #007bff;
+}
+
+.btn-primary:hover {
+background-color: #0069d9;
+border-color: #0062cc;
+}
+
+.btn-primary:focus {
+box-shadow: none;
+}
+
+.btn-danger {
+background-color: #dc3545;
+border-color: #dc3545;
+}
+
+.btn-danger:hover {
+background-color: #c82333;
+border-color: #bd2130;
+}
+
+.btn-danger:focus {
+box-shadow: none;
+}

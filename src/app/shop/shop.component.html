@@ -1,0 +1,71 @@
+<!-- Shop view of dashboard and cards  -->
+<div class="container shop-component">
+    <!-- Greeting Message-->
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+          <h3 class="text-primary font-weight-bold">Welcome, Joe Rogan</h3>
+          <p class="lead mt-3">We are delighted to have you here!</p>
+        </div>
+      </div>
+      
+        <!-- Shop Body  -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-bg-light m-3 h-100">
+              <div class="card-header text-light">Services 
+                <i class="bi bi-car-front m-2"></i>
+                <i class="bi bi-ev-front m-2"></i>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Manage Services</h5>
+                <p class="card-text">You can view services offered, update services and its prices</p>
+                <button class="btn btn-primary" routerLink="/shop/manage-services">Manage Services</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-bg-light m-3 h-100">
+              <div class="card-header text-light">Appointments
+                <i class="bi bi-droplet-fill m-2"></i>
+                <i class="bi bi-tools m-2"></i>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">View Appointments</h5>
+                <p class="card-text">You can view appointments, process the order and generate invoices.</p>
+                <button class="btn btn-primary" routerLink="/shop/manage-appointments">Manage Appointments</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="card text-bg-light m-3 h-100">
+              <div class="card-header text-light">Parts
+                <i class="bi bi-calendar-check m-2"></i>
+                <i class="bi bi-clock m-2"></i>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">View Inventory</h5>
+                <p class="card-text">You can view parts, make changes to part prices.</p>
+                <button class="btn btn-primary" routerLink="/shop/manage-parts">Manage Parts</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-6">
+            <div class="card text-bg-light m-3 h-100">
+              <div class="card-header text-light">Profile
+                <i class="bi bi-person-circle m-2"></i>
+                <i class="bi bi-sliders m-2"></i>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Profile Settings</h5>
+                <p class="card-text">You can make changes to your profile.</p>
+                <button class="btn btn-primary" routerLink="/shop/manage-profile">Manage Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      

@@ -1,0 +1,27 @@
+.shop-component .card {
+    background: linear-gradient(to bottom right, #4b6cb7, #000);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .shop-component .card-header {
+    background: #4b6cb7;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .shop-component .card-title {
+    color: #fff;
+  }
+  
+  .shop-component .card-text {
+    color: #eee;
+  }
+  
+  .shop-component .card-footer {
+    background: #4b6cb7;
+    color: #fff;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+  }
