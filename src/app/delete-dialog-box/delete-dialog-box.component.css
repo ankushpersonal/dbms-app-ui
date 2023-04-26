@@ -1,0 +1,53 @@
+/* .delete-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cancel-button {
+    background-color: grey;
+    color: white;
+    margin-right: 8px;
+  }
+
+  .delete-button {
+    background-color: red;
+    color: white;
+  } */
+
+  .dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    
+    .dialog-buttons button {
+    margin-left: 1rem;
+    }
+    
+    .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    }
+    
+    .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    }
+    
+    .btn-primary:focus {
+    box-shadow: none;
+    }
+    
+    .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    }
+    
+    .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+    }
+    
+    .btn-danger:focus {
+    box-shadow: none;
+    }
